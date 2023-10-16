@@ -1,4 +1,4 @@
-var countDownDate = new Date("Oct 21, 2023 17:38:00").getTime();
+var countDownDate = new Date("Oct 21, 2023 17:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -22,6 +22,6 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("timer").innerHTML = "FINAL STEPS TO TOTAL ENLIGHTENMENT:<br>14603 14th Ave SW, Burien, WA 98166 ";
+    document.getElementById("timer").innerHTML = "FINAL STEPS TO TOTAL ENLIGHTENMENT:<br>7pm @ 14603 14th Ave SW, Burien, WA 98166 ";
   }
 }, 1000);
