@@ -18,10 +18,12 @@ var x = setInterval(function() {
   // Display the result in the element with id="timer"
   document.getElementById("timer").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
+  document.getElementById("hidden-post").innerHTML = "You're on the right track.<br>Try again later.";
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("timer").innerHTML = "FINAL STEPS TO TOTAL ENLIGHTENMENT:<br>7pm @ 14603 14th Ave SW, Burien, WA 98166 ";
+    document.getElementById("hidden-post").innerHTML = "<img src=\"./assets/post.jpg\" alt=\"shh, it's a secret\"></img>";
   }
 }, 1000);
